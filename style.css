@@ -8,9 +8,16 @@ body{
     background-color:#000;
     height: 100vh;
 }
+section{
+    min-height: 100%;
+}
 .interface{
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
+    
+}
+.background-topo{
+    background: url("imagem/25336.jpg")top n;
 }
 .flex{
     display: flex;
@@ -26,7 +33,18 @@ body{
     transition: .2s;
 
 }
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #00ff08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
 
+}
 h2.titulo{
     color: #fff;
     font-size: 38px;
@@ -105,11 +123,11 @@ section.topo-do-site .flex{
     position: relative;
     margin-right: 40px;
     width:300px;
-    border-radius: 100%;
+    border-radius: 50%;
+    border: solid 2px #00ff08;
     animation: flutuar 2s ease-in-out infinite alternate; 
 
 }
-
 @keyframes flutuar {
     0%{
         top:0;
@@ -145,6 +163,7 @@ section.especialidades .flex{
     font-size: 28px;
     margin: 15px 0px;
 }
+
 /*estilo do sobre*/
 
 section.sobre{
@@ -189,9 +208,27 @@ section.sobre .flex{
 .img-sobre{
     border:solid 2px #00ff08 !important;
     border-radius: 30px;
+    animation: revelar 1ms ease-in-out ;
+    animation-timeline: view();
+    animation-range:  cover 0% cover 50%;
+    
+    
 }
 .img-sobre img{
     border-radius: 30px;
+}
+@keyframes revelar{
+    from{
+        opacity: 0;
+        translate: -100vw 0;
+        
+    }
+    to{
+        opacity: 1;
+        translate: 0 0 ;
+
+    }
+
 }
 /*ESTILO PORTFOLIO*/
 section.portfolio{
@@ -236,4 +273,41 @@ section.portfolio .flex{
 }
 .overlay:hover{
     opacity: 1;
+}
+
+/*ESTILO DO FORMULARIO CONTATO */
+
+section.formulario{
+    padding: 80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #24242430;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+
+}
+form textarea{
+    resize: none;
+    max-width: 600px;
+
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
 }

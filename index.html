@@ -19,7 +19,9 @@
     <title>Portifolio</title>
 </head>
 <body> 
-    <header>
+    <div class="background-topo">
+
+        <header>
         <div class="interface">
         
             <div class="logo">
@@ -29,10 +31,10 @@
             </div><!--logo-->
             <nav class="menu-desketop">
                 <ul>
-                    <li> <a href="#">inicio</a></li>
-                    <li> <a href="#">Especialidades</a></li>
-                    <li> <a href="#">Sobre</a></li>
-                    <li> <a href="#">projeto</a></li>
+                    <li> <a href="#inicio">inicio</a></li>
+                    <li> <a href="#especialidade">Especialidades</a></li>
+                    <li> <a href="#sobre">Sobre</a></li>
+                    <li> <a href="#portfolio">projeto</a></li>
                 </ul>
             </nav>
             <div class="btn-contato">
@@ -42,32 +44,32 @@
             </div>
  
         </div><!--inteface-->
-    </header><!--final header-->
-    <main>
-        <section class="topo-do-site">
+        </header><!--final header-->
+ <main>
+          <section class="topo-do-site" id="inicio">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
-                        <P>Criatividade e inovação andam lado a lado. Com uma combinação unica de design impactante,
-                        funcionalidade intuitiva e otimização para resultados, estou pronto(a) para criar a presença
-                        online dos seus sonhos.
+                        <h1>Olá mundo<span>.</span></h1>
+                        <P>Aqui você vai encontrar um pouco da minha jornada e meus trabalho como Desenvolverdor. Com uma combinação unica de design impactante,
+                        funcionalidade intuitiva e otimização para resultados, estou pronto para criar um prjeto dos sonhos.
                         </P>
-                        <div class="btn-contato">
-                            <a href="#">
-                                <button>Entre em contato</button>
-                            </a>
-                        </div>
-
+                        
+                        <div class="btn-social">
+                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a> 
+                            <a href="#"><button><i class="bi bi-github"></i></button></a>
+                         </div>  <!--btn-social-->
                     </div>
                     <div class="img-topo-site">
-                        <img src="imagem/Foto de perfil minimalista rosa com fundo moderno (1).png" alt="Imagem Proficipnal">
+                        <img src="imagem/Vana Studio -   unleashing their digital self in a vibrant digital world, gli… 2.png" alt="Imagem Proficipnal">
 
                     </div>
                 </div>
             </div><!--interface-->
-        </section><!--final topo-->
-        <section class="sobre">
+          </section><!--final topo-->
+      </div><!--finbal da background topo-->
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">  
                     
@@ -89,7 +91,7 @@
                 </div><!--flex-->
             </div><!--inteface-->
         </section><!--final sobre-->
-        <section class="especialidades">
+        <section class="especialidades" id="especialidade">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -120,11 +122,11 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--final especialidades-->
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="inteface">
                 <h2 class="titulo">MEU <span>PORTFOLIO.</span></h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url();">
+                    <div class="img-port" style="background-image: url(imagem/projeto\ 1.jpg);">
                         <div class="overlay">Projeto 1</div>
                     </div>
                     <div class="img-port" style="background-image: url();">
@@ -137,6 +139,19 @@
                 </div>
             </div><!--inteface-->
         </section><!--portifolio-->
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA  <span>COMIGO.</span></h2>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome Completo" required>
+                    <input type="text" name="" id="" placeholder="Seu Email" required>
+                    <input type="text" name="" id="" placeholder="Seu Celular" >
+                    <textarea name="" id="" cols="" rows="" placeholder="Sua mensagem"></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+
+                </form>
+            </div>
+        </section>
         
     </main>
 </body>
