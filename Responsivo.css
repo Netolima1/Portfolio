@@ -1,0 +1,85 @@
+@media screen and (max-width: 1020px) {
+   /*Classes GErais*/
+    .flex{
+        flex-direction: column;
+    }
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+    h2.titulo{
+        font-size: 38px;
+        line-height: 70px;
+        gap: 10px;
+    }
+    .btn-social{
+        text-align: center;
+    }
+
+    /*CABEÇALHO*/
+    .menu-desketop, .btn-contato {
+        display: none;
+    }
+    .btn-abrir-menu{
+        display: block;
+    }
+    
+
+    /*topo do site*/
+    section.topo-do-site .flex{
+        gap: 70px;
+        margin-bottom: -51px;
+    }
+    selection.topo-do-site{
+        padding: 20px 8%;
+    }
+   
+    .topo-do-site .img-topo-site img{
+        width:90%;
+        margin: 0% 5%;
+    }
+/*Sobre*/
+    section.bt-social {
+        text-align: center;
+    }
+    section.sobre .flex{
+    gap: 20px;
+    }
+    section.bt-social {
+        text-align: center;
+    }
+    section.sobre {
+        padding: 40px 8%;
+    }
+/*Especialidades*/
+    section.especialidades .flex{
+        gap: 30px;
+        padding: 40px 5%;
+    }
+    .especialidades .especialidades-box{
+        background-color: rgb(39, 37, 37);
+        
+    }
+/*Portfolio*/
+  
+      section.portfolio .gap-port{
+        margin-bottom: 60px;
+        border-radius: 30px solid #fff;
+
+    }
+ /*formulario*/
+    section.formulario{
+        padding: 80px 4%;
+        margin-bottom: -110px;
+    }
+     
+
+/*rodape*/
+     footer .flex{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+     }
+    
+
+}
+

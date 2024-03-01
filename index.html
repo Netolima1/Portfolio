@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!--google fontes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!--Final google fontes-->
-    <!--bootstrap-icon-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--final bootstrap icon-->
-
-
-    <title>Portifolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Responsivo.css">
+        <!--google fontes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--Final google fontes-->
+        <!--bootstrap-icon-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!--final bootstrap icon-->
+        <title>Portifolio</title>
+         
 </head>
 <body> 
     <div class="background-topo">
@@ -39,6 +39,28 @@
                 <a href="">
                     <button>contato</button>
                 </a>
+            </div><!--btn-contato-->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li> <a href="#inicio">inicio</a></li>
+                        <li> <a href="#especialidade">Especialidades</a></li>
+                        <li> <a href="#sobre">Sobre</a></li><br>
+                        <li> <a href="#portfolio">projeto</a></li>
+                        
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+            <div class="overlay-menu">
+                
             </div>
  
         </div><!--inteface-->
@@ -127,16 +149,21 @@
             <div class="inteface">
                 <h2 class="titulo">MEU <span>PORTFOLIO.</span></h2>
                 <div class="flex">
+                 <div class="gap-port">
                    <a href="" target="_blank"> <div class="img-port" style="background-image: url(imagem/projeto\ 1.jpg);">
                         <div class="overlay">Projeto Menu on-line</div>
                     </div></a>
+                  </div>
+                  <div class="gap-port">
                    <a href="https://netolima1.github.io/Pagina-De-Links/" target="_blank"> <div class="img-port" style="background-image: url(imagem/link.jpg);">
                         <div class="overlay">Projeto Link </div>
                     </div></a>
+                   </div>
+                   <div class="gap-port">
                     <a href="https://netolima1.github.io/SelecaoDeHerois/" target="_blank"><div class="img-port" style="background-image: url(imagem/play\ 1º.jpg);">
                         <div class="overlay">Projeto Seleção </div>
                     </div></a>
-                
+                   </div>
                 </div>
             </div><!--inteface-->
         </section><!--portifolio-->
@@ -154,6 +181,27 @@
             </div>
         </section>
         
-    </main>
+ </main>
+    <footer>
+        <div class="inteface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="imagem/Captura_de_tela_2024-01-11_144037-removebg-preview.png" alt="">
+                    </div>
+                    <div class="btn-social">
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="#"><button><i class="bi bi-linkedin"></i></button></a> 
+                        <a href="#"><button><i class="bi bi-github"></i></button></a>
+                    </div>  <!--btn-social-->
+                </div>
+            </div>
+            <div class="line-footer borda">
+                <p> <i class="bi bi-envelope"></i> <a href="mailto:neto.lima_@outlook.com">neto.lima_@outlook.com</a></p>
+
+            </div>
+        </div>
+    </footer>
+    <script src="Menu.js"></script>   
 </body>
 </html>
